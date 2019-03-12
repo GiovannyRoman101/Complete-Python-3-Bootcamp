@@ -24,5 +24,5 @@ class Deck():
         random.shuffle(self.deck)
 
     def deal(self):
-        return self.deck.pop(random.randint(0, len(self.deck)-1))
+        return self.deck.pop()
 

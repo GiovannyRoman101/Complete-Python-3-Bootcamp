@@ -17,8 +17,6 @@ class Hand():
         self.adjust_for_ace()
     
     def adjust_for_ace(self):
-        count = 0
         if(self.value > 21 and self.aces > 0):
-            count += 1
             self.aces -= 1
             self.value -= 10
